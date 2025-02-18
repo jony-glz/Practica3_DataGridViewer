@@ -21,6 +21,10 @@ namespace Practica3_DataGridViewer
                 // Se le asigna el nombre del archivo al frame
                 this.Text = Path.GetFileName(fileName);
 
+                // Borra los registros de renglones, columnas y valores por asignar
+                dataGridViewCSV.Rows.Clear();
+                dataGridViewCSV.Columns.Clear();
+
                 // Determina la cantidad de encabezados y les asigna el respectivo nombre
                 string[] header = text[0].Split(',');
                 for (int i = 0; i < header.Length; i++)
