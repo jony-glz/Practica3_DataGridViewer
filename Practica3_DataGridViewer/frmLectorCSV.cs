@@ -1,3 +1,5 @@
+using Practica3_DataGridViewer;
+
 namespace Practica3_DataGridViewer
 {
     public partial class frmDataGrid : Form
@@ -41,5 +43,10 @@ namespace Practica3_DataGridViewer
             }
         }
 
+        private void fechaDeNacimientoYCURPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDateTimePick dDTP = new frmDateTimePick();
+            dDTP.Show();
+        }
     }
 }
